@@ -207,8 +207,9 @@ Date de création : 24/07/202 Dernière mise à jour : 05/08/2022    Dev : VPL  
   }
   /*******activite*******/
     .section_activite{
-    height: 1780px;
+    height: 1900px;
     margin-left: 0;
+    margin-bottom: O;
   }
   .section_activite .activite{
     flex-direction: column;
@@ -291,6 +292,9 @@ Date de création : 24/07/202 Dernière mise à jour : 05/08/2022    Dev : VPL  
   }
   .section_activite{
     margin-left: 10px;
+  }
+  .section_activite{ 
+    margin-bottom: 0;  
   }
 }
   
