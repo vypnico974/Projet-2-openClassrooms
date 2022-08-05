@@ -1,0 +1,58 @@
+/*** recherche.css -- partie recherche des règles de mise en forme du site Booki - projet 2 OpenClassroom
+Date de création : 24/07/202   Dernière mise à jour : 04/08/2022       Dev : VPL  ****/
+
+.section_recherche{
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
+.section_recherche h2{
+    margin-bottom: 15px;
+}
+.section_recherche p{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.section_recherche .localisation{
+    margin-bottom: 30px;
+    height: 50px;
+}
+.icone_localisation{
+    background-color: #f2f2f2;
+    border-radius: 15px 0 0 15px;
+    width: 50px;
+}
+.section_recherche .fa-map-marker-alt {
+    background-color: #F2F2F2;
+    border-radius: 10px 0 0 10px; /* bordure arrondie  */
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120%
+}
+.saisie_localisation{
+    border: 1px solid #f2f2f2;
+    padding: 0 0 0 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 230px;
+}
+.saisie_localisation::placeholder{
+    color: #c2c2c2;
+}
+.bouton_recherche{
+    width: 130px;
+    background-color: #0065FC;
+    border: none;
+    padding: 0;
+    border-radius: 0 15px 15px 0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 100%;
+    cursor: pointer;
+}
+.bouton_recherche i{
+    display: none;
+}
+  

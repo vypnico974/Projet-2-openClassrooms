@@ -1,0 +1,57 @@
+/*** information.css -- partie navigation des règles de mise en forme du site Booki - projet 2 OpenClassroom
+Date de création : 24/07/202   Dernière mise à jour : 05/08/2022       Dev : VPL  ****/
+
+.section_populaire{
+    background: #F2F2F2;
+    width: 30%;
+    height: 650px;
+    border-radius: 20px; /* bordure arrondie  */
+}
+.section_populaire .titre_populaire{
+    display: flex;
+    justify-content: space-around;/* Les éléments sont répartis équitablement
+    À chaque extrémité, entre le bord du conteneur et le premier/dernier élément on a la moitié de l'espace appliqué entre chaque élément */
+    align-items: center;
+    margin: 40px 0;
+}
+.fa-chart-line{
+    font-size: 25px;
+}
+.section_populaire .carte_populaire{
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: white;
+    height: 145px;
+    width: 290px;
+    margin-bottom: 30px;
+    display: flex;
+    margin-left: 40px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.062); /*** bordure effet ombre  ***/
+    transition: 0.8s; /** effet visuel **/
+}
+.section_populaire .carte_populaire:hover{
+    transform: scale(1.09);  /** effet visuel **/
+}
+.section_populaire img{
+    object-fit: cover; /***  Le contenu remplacé est dimensionné pour maintenir son ratio d'affichage  ***/
+    height: 140px;
+    width: 110px;
+    border-radius: 20px 0 0 20px; /** bordure arrondi  **/
+    padding: 3%;
+}
+.section_populaire .carte_hebergement_texte{
+    margin-top: 1%;
+}
+  
+.section_populaire .notation{
+    margin-top: 25px;
+}
+.section_populaire .couleur_bleu{
+    color: #0065fc;
+    font-size: 80%;
+}
+.section_populaire .couleur_gris_fonce{
+    color: #d6d1d1;
+    font-size: 80%;
+}
+  

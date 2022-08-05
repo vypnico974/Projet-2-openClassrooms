@@ -1,0 +1,32 @@
+/*** information.css -- partie navigation des règles de mise en forme du site Booki - projet 2 OpenClassroom
+Date de création : 24/07/202   Dernière mise à jour : 04/08/2022       Dev : VPL  ****/
+
+.section_information{
+    margin-left: 0;
+  }
+  .info{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }  
+.section_information h2{
+    margin-left: 10px;
+    font-size: 110%;
+    font-weight: 300;
+    color: rgb(59, 59, 59);
+}
+.section_information .icone_information{
+    border: #F2F2F2 solid 2px;
+    border-radius: 50%; /* bordure arrondie  */
+    height: 25px;
+    width: 25px;
+    color: #0065fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+.section_information i{
+    font-size: 80%;
+}
+  

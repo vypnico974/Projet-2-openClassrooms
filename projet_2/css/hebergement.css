@@ -1,0 +1,72 @@
+/*** hebergement.css -- partie hebergement des règles de mise en forme du site Booki - projet 2 OpenClassroom
+Date de création : 24/07/202   Dernière mise à jour : 05/08/2022       Dev : VPL  ****/
+
+.conteneur_hebergement{
+    display: flex; /** éléments flexibles ***/ 
+    margin-top: 50px;
+    padding-left: 2%;
+}
+.section_hebergement{
+    background: #F2F2F2;
+    width: 65%;
+    height: 650px;
+    border-radius: 20px;  /** arrondi du cadre  ***/
+    margin-right: 30px;
+}
+.section_hebergement h2{
+    margin: 40px 0 40px 20px;
+}
+.hebergement_haut{
+    display: flex; /** éléments flexibles ***/ 
+    justify-content: space-around; /** Les éléments s'affichent avec un espacement égal à l'entour d'eux   **/
+    flex-wrap: wrap; /** Les éléments flexibles sont disposé sur plusieurs lignes ***/
+}
+.section_hebergement img{
+    object-fit: cover; /* Le contenu remplacé est dimensionné pour maintenir son ratio d'affichage tout en remplissant toute la boîte de contenu */
+    width: 100%;
+    height: 120px;
+    border-radius: 20px 25px 0 0; /***arrondi du cadre***/ 
+    padding-right: 10px;
+    margin: 5px 0 0 5px;
+}
+.section_hebergement .carte_hebergement{
+    width: 220px;
+    height: auto;
+    background: white;
+    margin-bottom: 40px;
+    border-radius: 20px 20px 20px 20px; /***arrondi du cadre***/ 
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.062); /***  ajoute une ombre au cadre  **/
+    transition: 0.8s; /*  définir la transition entre deux états des cartes hébergements **/
+    padding-bottom: 10px;
+}
+.section_hebergement .carte_hebergement:hover{
+    transform: scale(1.09); /** effet visuelle (changer la perspective) **/ 
+}
+.carte_hebergement_texte{
+    margin-left: 15px;
+    line-height: 25px;
+}
+.section_hebergement .notation{
+    font-size: 90%;
+}
+.hebergement_bas{
+    display: flex;
+    justify-content: space-around; /** Les éléments s'affichent avec un espacement égal à l'entour d'eux   **/
+    flex-wrap: wrap; /** Les éléments flexibles sont disposé sur plusieurs lignes ***/
+}
+.section_hebergement .couleur_bleu{
+    color: #0065fc;
+}
+.section_hebergement .couleur_gris_fonce{
+    color: #d6d1d1;
+}
+.section_hebergement .afficher_plus{
+    margin-left: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 113%;
+}
+.section_hebergement .afficher_plus:hover{
+    color: #0065FC;
+}
+  

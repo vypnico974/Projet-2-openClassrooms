@@ -1,325 +1,297 @@
- /*** responsive.css -- ensemble des règles responsive
-      du site Booki - projet 2 OpenClassroom
-Date de création : 24/07/202
-Dernière mise à jour : 01/08/2022
-Dev : VPL 
-****/
- 
- /***  version écran d'ordinateur  ***/
- @media screen and (min-width:992px) and (max-width: 1366px){ 
-    
+ /*** responsive.css -- ensemble des règles responsive du site Booki - projet 2 OpenClassroom
+Date de création : 24/07/202 Dernière mise à jour : 05/08/2022    Dev : VPL      ****/
+
+/**   pour centrer l'ensemble de la page pour les écrans>1366px */
+@media screen and (min-width:1367px){
+  html {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    }
+} 
+/***  version écran d'ordinateur  ***/
+@media screen and (min-width:992px) and (max-width: 1366px){ 
   /***** filtres******/
-    .section_filtre .conteneur_filtre{
-      margin-top: 10px;
-      margin-left: 15px;
-    }
-    .section_filtre h3{
-      margin: 15px 5px 0 20px;
-      font-size: 120%;
-    }
-    .section_filtre{
-      font-size: 100%;
-    }
-
-    /****** hébergement******/
-    .section_hebergement h2{
-      font-size: 120%;
-    }
-    .hebergement_haut{
-      flex-wrap: nowrap; /* Les éléments flexibles sont disposés sur une seule ligne  */
-    }
-
-    .section_hebergement .carte_hebergement{
-      width: 29%;
-      height: 210px;
-    }
-    .section_hebergement .carte_hebergement_texte{
-      font-size: 81%;
-    }
-    .section_hebergement img{
-      height: 120px;
-    }
-
-    /****** populaire*******/
-    .section_populaire .carte_populaire{
-      margin-left: 10px;
-      width: 90%
-    }
-    .section_populaire .carte_hebergement_texte{
-      font-size: 81%;
-      line-height: 18px;
-      margin-top: 15px;
-    }
-    .section_populaire .notation{
-      margin-top: 10px;
-    }
-    .section_populaire h2{
-      font-size: 120%;
-    }
-    .section_populaire p{
-      font-size: 100%;
-      padding-bottom: 40px;
-    }
-    
-    
-  
+  .section_filtre .conteneur_filtre{
+    margin-top: 0;
+    margin-left: 15px;
   }
-      
-  /*** version tablette  ***/
-  @media screen and (max-width: 991px){
-    *{
-      box-sizing: content-box;
-    }
-
-    /* ************navigation  ***************/
-    header{
-      margin: 0;
-      flex-direction: column;
+  .section_filtre h3{
+    margin: 10px 0 0 30px;
+    font-size: 120%;
+  }
+  .section_filtre{
+    font-size: 100%;
+  }
+/****** hébergement******/
+  .section_hebergement h2{
+    font-size: 120%;
+  }
+  .hebergement_haut{
+    flex-wrap: nowrap; /* Les éléments flexibles sont disposés sur une seule ligne  */
+  }
+  .section_hebergement .carte_hebergement{
+    width: 29%;
+    height: 210px;
+  }
+  .section_hebergement .carte_hebergement_texte{
+    font-size: 81%;
+  }
+  .section_hebergement img{
+    height: 120px;
+  }
+  /****** populaire*******/
+  .section_populaire .carte_populaire{
+    margin-left: 10px;
+    width: 90%
+  }
+  .section_populaire .carte_hebergement_texte{
+    font-size: 81%;
+    line-height: 18px;
+    margin-top: 15px;
+  }
+  .section_populaire .notation{
+    margin-top: 10px;
+  }
+  .section_populaire h2{
+    font-size: 120%;
+  }
+  .section_populaire p{
+    font-size: 100%;
+    padding-bottom: 40px;
+  }
+}
+/*** version tablette  ***/
+@media screen and (max-width: 991px){
+  *{
+    box-sizing: content-box;
+  }
+ /* ************navigation  ***************/
+  .conteneur_navigation{
+    margin: 0;
+    padding-left: 0;
+    flex-direction: column;
+    width: 100%;
+  }
+  .logo{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  nav ul{
       width: 100%;
-    }
-    
-    .logo{
-       margin-left: auto;
-       margin-right: auto;
-    }
-    
-    
-    nav ul{
-      width: 100%;
-    }
-    
-    nav li{
-      width: 50%;
-      text-align: center;
-      padding: 20px 0;
-      border-bottom: 3px solid #f2f2f2;
-    }
-    
-    nav li a{
-      padding: inherit; /* propriétés héritées, surcharge de la règle    */
-    }
-    
-    nav li a:hover{
+  }
+  nav li{
+    width: 50%;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 3px solid #f2f2f2;
+  }
+  nav li a{
+    padding: inherit; /* propriétés héritées, surcharge de la règle    */
+  }
+  nav li a:hover{
       border-top: none;
     }
-    
-    nav li:hover{
+  nav li:hover{
       border-bottom-color:#0065FC;
     }
-
-    /************ recherche **************/
-    .section_recherche input{
-      width: 220px;
-      font-size: 100%;
-    }
-    .section_recherche .bouton_rechercher{
-      width: 50px;
-      display: none;
-    }
-    .section_recherche .fa-search{
-      display: flex;
-      justify-content: center;  /* Éléments groupés au centre */
-      align-items: center;
-      border-radius: 15px;
-      background: #0065fc;
-      color: white;
-      cursor: pointer;
-      width: 50px;
-      margin-left: -10px; 
-    }
-     .section_recherche h1{
-      font-size: 120%;
-    }
-
-    /********* filtres*************/
-    .section_filtre .conteneur_filtre{
-      margin-left: 20px;
-    }
-    .section_filtre p{
-      font-size: 100%;
-    }
-    .section_filtre{
-      flex-direction: column;
-    }
-    .filters-column{
-      flex-direction: column;
-      align-items: flex-start; /* Les éléments flexibles sont regroupés au début */
-    }
-    .section_filtre .bouton_filtre{
-      margin: 10px 20px 0 0;
-      padding-right: 10px;
-    }
-
-    /*********information***********/
-    .section_information h2{
-      font-size: 95%;
-      margin-left: 10px;
-    }
-
-    /******* principal **********/
-    main{
-      margin-left: 0;
-      flex-direction: column-reverse; /*** les colonnes sont inversées *****/
-    }
-    
-    /********** hebergement***********/
-    .section_hebergement .hebergement_haut{
-      flex-direction: column;
-      width: 100%;
-    }
-    .section_hebergement span{
-      margin-left: 10px;
-    }
-    .section_hebergement{
-      flex: none;
-      width: 90%;
-      margin-right: 0%;
-      padding: 5%;
-      height: auto;
-      background-color: white
-    }
-    .section_hebergement h2{
-      margin: 25px 0;
-    }
-    .section_hebergement .carte_hebergement{
-      width: 95%;
-      margin-bottom: 20px;
-    }
-    .section_hebergement img{
-      object-fit: cover; /* Le contenu remplacé est dimensionné pour maintenir
-       son ratio d'affichage tout en remplissant toute la boîte de contenu  */
-      height: 180px;
-    }
-    .section_hebergement .carte_populaire{
-      width: 100%;
-    }
-    
-    .section_hebergement .hebergement_bas {
-      justify-content: start; /* Éléments groupés au début */
+  /************ recherche **************/
+  .section_recherche{
+      margin: 30px 20px;
   }
-    /********populaire*********/
-    .section_populaire{
-      flex: none;
-      width: 90%;
-      margin-left: 0;
-      padding: 30px 5%;
-      border-radius: 0;
-      height: 560px;
-    }
-    .section_populaire .titre_populaire{
-      margin-top: 0;
-      display: flex;
-      justify-content: space-between; /** * Les éléments sont répartis équitablement   **/
-    }
-   
-    
-    .section_populaire .carte_populaire{
-      width: auto;
-      margin-left: 0;
-      margin-bottom: 15px;
-    }
-    .section_populaire img{
-      height: 140px;
-      width: 250px;
-      padding: 1%;
-    }
-    .section_populaire .text-picture{
-      margin-left: 30px;
-    }
-    .section_populaire h4{
-      font-size: 120%;
-    }
-    .section_populaire p{
-      font-size: 100%;
-    }
-    .section_populaire .notation{
-      font-size: 100%;
-    }
-
-    /*******activite*******/
+ .section_recherche p{
+    margin-bottom: 20px;
+  }
+  /********* filtres*************/
+  .section_filtre .conteneur_filtre{
+    margin-left: 20px;
+  }
+  .section_filtre p{
+    font-size: 100%;
+  }
+  .section_filtre h3{
+    margin-left: 30px;
+  }
+  .section_filtre{
+    flex-direction: column;
+  }
+  .filters-column{
+    flex-direction: column;
+    align-items: flex-start; /* Les éléments flexibles sont regroupés au début */
+  }
+  .section_filtre .bouton_filtre{
+    margin: 10px 20px 0 0;
+    padding-right: 10px;
+  }
+  /*********information***********/
+  .section_information h2{
+    font-size: 95%;
+    margin-left: 0;
+  }
+  /********** hebergement***********/
+  .conteneur_hebergement{
+    margin-left: 0;
+    padding-left: 0;
+    flex-direction: column-reverse; /*** les colonnes sont inversées *****/
+  }
+  .section_hebergement .hebergement_haut{
+    flex-direction: column;
+    width: 100%;
+  }
+  .section_hebergement span{
+    margin-left: 10px;
+  }
+  .section_hebergement{
+    flex: none;
+    width: 95%;
+    margin-right: 0%;
+    padding: 5%;
+    height: auto;
+    background-color: white
+  }
+  .section_hebergement h2{
+    margin: 30px 0;
+  }
+  .section_hebergement .carte_hebergement{
+    width: 95%;
+    margin-bottom: 20px;
+  }
+  .section_hebergement img{
+    object-fit: cover; /* Le contenu remplacé est dimensionné pour maintenir
+    son ratio d'affichage tout en remplissant toute la boîte de contenu  */
+    height: 180px;
+  }
+  .section_hebergement .carte_populaire{
+    width: 100%;
+  }
+  .section_hebergement .hebergement_bas {
+    justify-content: start; /* Éléments groupés au début */
+  }
+  /********populaire*********/
+  .section_populaire{
+    flex: none;
+    width: 90%;
+    margin-left: 0;
+    padding: 20px 20px;
+    border-radius: 0;
+    height: 560px;
+  }
+  .section_populaire .titre_populaire{
+    margin-top: 0;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between; /** * Les éléments sont répartis équitablement   **/
+  }
+  .section_populaire .carte_populaire{
+    width: auto;
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+  .section_populaire img{
+    height: 140px;
+    width: 250px;
+    padding: 1%;
+  }
+  .section_populaire .text-picture{
+    margin-left: 30px;
+  }
+  .section_populaire h4{
+    font-size: 120%;
+  }
+  .section_populaire p{
+    font-size: 100%;
+  }
+  .section_populaire .notation{
+    font-size: 100%;
+  }
+  /*******activite*******/
     .section_activite{
-      height: 1900px;
-      margin-left: 55px;
-    }
-    
-    .section_activite .activite{
-      flex-direction: column;
-      width: 90%;
-      padding-left: 0;
-    }
-    .section_activite .activite{
-      flex-direction: column;
-      width: 90%;
-    }
-    .section_activite img{
-      height: 210px;
-      width: 100%;
-    }
-    .section_activite .carte_activite{
-      margin-bottom: 20px;
-     
-    }
-    .section_activite .carte_activite_colonne{
-      padding-left: 0;
-    }
-    .section_activite .carte_activite_colonne .carte_activite_petit{
-      margin-bottom: 25px;
-    }
-
-    .section_activite .activite .carte_activite_colonne {
-      width: 100%;
-    } 
-    
-    .section_activite .activite .carte_activite_grand {
-      width: 100%;
-    } 
-    
-    .section_activite .activite  a .carte_activite_grand {
-      width: 100%;
-    } 
-    
-    /******* pied de page*****/
-
-    .pied_page{
-      margin-top: -200px;
-      height: auto;
-      flex-direction: column;
-    }
+    height: 1780px;
+    margin-left: 0;
   }
-  
-  /*** version téléphone portable  ***/
-  @media screen and (max-width: 767px){
-
-   
-
-  
-
-    /*** recherche   ****/
-    .section_recherche h1{
-      font-size: 180%;
-    }
-
-
-    /* populaire */
-    .section_populaire h4{
-      font-size: 100%;
-    }
-    .section_populaire p{
-      font-size: 87%;
-    }
-    .section_populaire .notation{
-      font-size: 87%;
-      margin-top: 25px;
-    }
-    .section_populaire img{
-      width: 160px;
-    }
-    .section_activite{
-      margin-left: 30px;
-    }
-
-
-    
+  .section_activite .activite{
+    flex-direction: column;
+    width: 90%;
   }
+  .section_activite img{
+    height: 210px;
+    width: 100%;
+  }
+  .section_activite .carte_activite{
+    margin-bottom: 20px;
+  }
+  .section_activite .carte_activite_colonne{
+    margin-bottom: 20px;
+  }
+  .section_activite .carte_activite_colonne .carte_activite_petit,
+  .section_activite .carte_activite_colonne .carte_activite_pomegues{   
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+  .section_activite .activite .carte_activite_grand {
+    margin-bottom: 15px;
+    width: 100%;
+  } 
+  .section_activite .carte_activite_colonne .carte_activite_frioul{
+    margin:0;
+  }
+  .section_activite .carte_activite_colonne .carte_activite_frioul{
+    margin-bottom: 15px;
+  }
+  .section_activite .carte_activite_colonne .carte_activite_garde{
+    margin-bottom: 25px;
+  }
+  .section_activite .activite .carte_activite_colonne {
+    margin-bottom: 0;
+    width: 100%;
+  } 
+  /******* pied de page*****/
+  .pied_page{
+    height: auto;
+    flex-direction: column;
+  }
+}
+/*** version téléphone portable  ***/
+@media screen and (max-width: 767px){
+  .bouton_recherche{
+    position: relative;
+    width: 50px;
+    border-radius: 15px;
+    left: -20px;
+  }
+  .bouton_recherche span{
+    display: none;
+  }
+  .bouton_recherche i{
+    display: inline-block; /*  pour afficher un élément en tant que conteneur de bloc en ligne */
+  }
+  /* populaire */
+  .section_populaire{
+     width: 95%;
+  }
+  .carte_populaire{
+     padding-right: 30px;
+  }
+  .section_populaire h2{
+    margin-left: 10px;
+  }
+  .section_populaire h4{
+    font-size: 100%;
+  }
+  .section_populaire p{
+    font-size: 90%;
+  }
+  .section_populaire .notation{
+    font-size: 90%;
+    margin-top: 25px;
+  }
+  .section_populaire img{
+    width: 160px;
+  }
+  .section_activite{
+    margin-left: 10px;
+  }
+}
   
   

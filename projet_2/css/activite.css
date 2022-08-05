@@ -1,0 +1,85 @@
+/*** activite.css -- partie activités des règles de mise en forme du site Booki - projet 2 OpenClassroom
+Date de création : 24/07/202   Dernière mise à jour : 05/08/2022       Dev : VPL  ****/
+
+.section_activite{ 
+    margin-bottom: 50px;  
+  }
+.section_activite h2{
+    margin: 60px 0 30px 35px;   
+}
+.section_activite .activite{
+    display: flex;
+    height: 470px;
+    gap: 2%;  /*** taille entre les lignes d'un éléments*****/
+    margin-left: 30px;
+}
+.section_activite .carte_activite_colonne .carte_activite_petit,
+.section_activite .carte_activite_colonne .carte_activite_frioul,
+.section_activite .carte_activite_colonne .carte_activite_pomegues,
+.section_activite .carte_activite_colonne .carte_activite_garde{
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.062); /*** bordure effet ombre  ***/
+    transition: 0.8s; /** effet visuel **/  
+} 
+  
+.section_activite .carte_activite_colonne .carte_activite_frioul{
+   margin-top: 60px;
+}
+  .section_activite .carte_activite_colonne .carte_activite_garde{
+    margin-bottom: 55px;
+}
+.section_activite .carte_activite_colonne .carte_activite_frioul:hover,
+.section_activite .carte_activite_colonne .carte_activite_pomegues:hover,
+.section_activite .carte_activite_colonne .carte_activite_garde:hover,
+.section_activite .carte_activite_colonne .carte_activite:hover,
+.section_activite .carte_activite_colonne .carte_activite_petit:hover{
+    transform: scale(1.09); /** effet visuelle (changer la perspective) **/ 
+}
+.section_activite .activite .carte_activite_colonne,
+.section_activite .activite .carte_activite_grand {
+    width: 23%;
+} 
+.section_activite .activite .carte_activite_grand {
+    width: 23%;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.062); /*** bordure effet ombre  ***/
+    transition: 0.8s; /** effet visuel **/
+} 
+.section_activite .activite .carte_activite_grand:hover{
+    transform: scale(1.02); /** effet visuelle (changer la perspective) **/ 
+}
+.section_activite img{
+    object-fit: cover; /***  Le contenu remplacé est dimensionné pour maintenir son ratio d'affichage  ***/
+    border-radius: 15px 15px 0 0; /*** bordure arrondie  ***/
+    width: 300px;
+    max-width: 100%;
+}
+.image_activite_vieux_port, .image_activite_calanques{
+    height: 420px;
+}
+.image_activite_pomegues{
+    height: 170px;
+}
+.image_activite_frioul{
+    height: 135px;
+}
+.image_activite_garde{
+    height: 145px;
+}
+.image_activite_longchamp{
+    height: 165px;
+}
+.carte_activite{
+    padding-bottom: 20px;
+    margin-left: 30px;
+} 
+.section_activite .carte_activite_texte{
+    font-weight: 700;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}

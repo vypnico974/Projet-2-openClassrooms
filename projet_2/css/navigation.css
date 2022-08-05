@@ -1,0 +1,35 @@
+/*** navigation.css -- partie navigation des règles de mise en forme  du site Booki - projet 2 OpenClassroom
+Date de création : 24/07/202   Dernière mise à jour : 04/08/2022       Dev : VPL  ****/
+
+a{
+    text-decoration: none;
+    color: inherit; /** hérite*****/
+}  
+.flex{
+    display: flex;
+}
+  /* en-tête */
+.conteneur_navigation{
+    justify-content: space-between; /* Les éléments sont répartis équitablement
+    Le bord du premier est aligné sur le  début du conteneur et la fin du dernier  est alignée sur la fin du conteneur **/
+    margin-bottom: 35px;
+    margin-left: 45px;
+}
+.logo{
+    margin-top: 20px;
+}
+.logo img{
+    width: 130px;
+}
+nav li{
+    padding-top: 32px;
+    padding-right: 20px;
+}
+nav a{
+    padding: 40px 30px 0;
+}
+nav li a:hover{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+    padding-top: 30px;
+}
