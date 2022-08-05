@@ -1,0 +1,48 @@
+/*** filtre.css -- partie filtre des règles de mise en forme du site Booki - projet 2 OpenClassroom
+Date de création : 24/07/202   Dernière mise à jour : 04/08/2022       Dev : VPL  ****/
+
+.section_filtre{
+    display: flex;
+    margin-top: 10px;
+}
+.section_filtre .conteneur_filtre{
+    display: flex;
+}
+.section_filtre .bouton_filtre{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding-right: 10px;
+    border: #dfdede 2px solid;
+    border-radius: 30px;  /**bordure arrondie**/
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 2.8s; /** effet visuel****/
+    font-size: 100%;
+}
+.section_filtre .bouton_filtre:hover{
+    transform: scale(1.05); /** effet visuel****/
+}
+.section_filtre .icone_filtre{
+    height: 50px; 
+    width: 50px;
+    border-radius: 50%;
+    background-color: #DEEBFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 112%; /*  agrandir l'icone   */
+    color: #0065fc;
+    margin-left: -5px; /* pour que le cercle de l'icone dépasse légèrement du cadre bouton_filtre  */
+}
+.section_filtre p{
+    font-weight: 600;
+    font-size: 120%;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.section_filtre p:hover{
+    color: #0065fc;
+}
+  
