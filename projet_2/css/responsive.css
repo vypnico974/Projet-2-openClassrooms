@@ -2,7 +2,7 @@
 Date de création : 24/07/202 Dernière mise à jour : 05/08/2022    Dev : VPL      ****/
 
 /**   pour centrer l'ensemble de la page pour les écrans>1365px */
-@media screen and (min-width:1367px){
+@media screen and (width > 1366px){
   html {
     margin-left: auto;
     margin-right: auto;
@@ -76,7 +76,7 @@ Date de création : 24/07/202 Dernière mise à jour : 05/08/2022    Dev : VPL  
   }
 }
 /*** version tablette  ***/
-@media screen and (max-width: 991px){
+@media screen and (width < 992px){
  
  /* ************navigation  ***************/
   .conteneur_navigation{
@@ -285,7 +285,7 @@ Date de création : 24/07/202 Dernière mise à jour : 05/08/2022    Dev : VPL  
   }
 }
 /*** version téléphone portable  ***/
-@media screen and (max-width: 767px){
+@media screen and (width < 768px){
   .bouton_recherche{
     position: relative;
     width: 50px;
