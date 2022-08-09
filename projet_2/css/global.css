@@ -7,7 +7,7 @@ Date de création : 24/07/202    Dernière mise à jour : 01/08/2022    Dev : VP
 *{
   list-style-type: none;
   text-decoration: none;
-  max-width: 1366px; /*  largeur maximale de la page  */
+  max-width: 1366px; /*  largeur maximale de la page */
   margin: 0;
   padding: 0;
   box-sizing: border-box; /* indique au navigateur de prendre en compte la bordure
