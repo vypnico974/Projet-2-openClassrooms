@@ -32,7 +32,7 @@ Date de création : 24/07/202 Dev : VPL      ****/
   }
 /****** hébergement******/
 .section_hebergement{
-  margin-left: O;
+  margin-left: 0;
   padding-left: 0;
   }
   .section_hebergement h2{
@@ -218,9 +218,9 @@ Date de création : 24/07/202 Dev : VPL      ****/
   } 
   /*******activite*******/
     .section_activite{
-    height: 1730px;
+    height: 1780px;
     margin-left: 0;
-    margin-bottom: O;
+    margin-bottom: 0;
   }
   .section_activite .activite{
     flex-direction: column;
