@@ -1,10 +1,10 @@
 /*** hebergement.css -- partie hebergement des règles de mise en forme du site Booki - projet 2 OpenClassroom
-Date de création : 24/07/202   Dernière mise à jour : 05/08/2022       Dev : VPL  ****/
+Date de création : 24/07/202   Dev : VPL  ****/
 
 .conteneur_hebergement{
     display: flex; /** éléments flexibles ***/ 
     margin-top: 50px;
-    padding-left: 30px;
+    margin-left: 30px;
 }
 .section_hebergement{
     background: #F2F2F2;
@@ -15,14 +15,11 @@ Date de création : 24/07/202   Dernière mise à jour : 05/08/2022       Dev : 
 }
 .section_hebergement h2{
     margin: 40px 0 20px 33px;
-    
 }
 .hebergement_haut, .hebergement_bas{
     display: flex; /** éléments flexibles ***/ 
     justify-content: space-evenly; 
-    align-items: center;
-    
-    
+    align-items: center;    
 }
 .section_hebergement img{
     object-fit: cover; /* Le contenu remplacé est dimensionné pour maintenir son ratio d'affichage tout en remplissant toute la boîte de contenu */

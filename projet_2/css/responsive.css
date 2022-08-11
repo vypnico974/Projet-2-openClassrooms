@@ -1,24 +1,20 @@
  /*** responsive.css -- ensemble des règles responsive du site Booki - projet 2 OpenClassroom
-Date de création : 24/07/202 Dernière mise à jour : 05/08/2022    Dev : VPL      ****/
+Date de création : 24/07/202 Dev : VPL      ****/
 
-/**   pour centrer l'ensemble de la page pour les écrans>1366px */
-@media screen and (width > 1366px){
+/**   pour centrer l'ensemble de la page pour les écrans>1365px */
+@media screen and (width>1366px){
   html {
     margin-left: auto;
     margin-right: auto;
     align-items: center;
     justify-content: center;
     }
-
     .section_filtre h3{
-      margin: 10px 30px 0  30px;
-    
+      margin: 10px 30px 0  30px;    
     }
-
     .section_hebergement h2{
       margin: 40px 0 20px 55px;
-      
-  }
+    }
 } 
 /***  version écran d'ordinateur  ***/
 @media screen and (min-width:992px) and (max-width: 1366px){ 
@@ -35,7 +31,6 @@ Date de création : 24/07/202 Dernière mise à jour : 05/08/2022    Dev : VPL  
     font-size: 100%;
   }
 /****** hébergement******/
-
 .section_hebergement{
   margin-left: O;
   padding-left: 0;
@@ -54,30 +49,26 @@ Date de création : 24/07/202 Dernière mise à jour : 05/08/2022    Dev : VPL  
     height: 120px;
   }
   /****** populaire*******/
-  .section_populaire .carte_populaire{
-    margin-left: 10px;
+  .section_populaire .carte_populaire{   
     width: 90%
   }
-  .section_populaire .carte_hebergement_texte{
-    font-size: 80%;  
-    line-height: 20px;
-    
+  .section_populaire .carte_populaire_texte{
+    font-size: 100%; 
+    line-height: 20px;    
   }
   .section_populaire .notation{
-    padding-top: 23%;
+    margin-top: 10px;
     margin-left: 0;
   }
   .section_populaire h2{
     font-size: 110%;
   }
   .section_populaire p{
-    font-size: 100%;
-   
+    font-size: 100%;   
   }
 }
 /*** version tablette  ***/
-@media screen and (width < 992px){
- 
+@media screen and (max-width: 991px){ 
  /* ************navigation  ***************/
   .conteneur_navigation{
     margin: 0;
@@ -137,14 +128,15 @@ Date de création : 24/07/202 Dernière mise à jour : 05/08/2022    Dev : VPL  
   }
   /*********information***********/
   .section_information h2{
-    font-size: 95%;
-    margin-left: 0;
+    font-size: 95%;  
+  }
+  .section_information .icone_information{
+    margin-left: 20px;
   }
   /********** hebergement***********/
   .section_hebergement{
    margin-left: 0;
    padding-left: 0;
-
   }
   .conteneur_hebergement{
     margin-left: 0;
@@ -164,11 +156,10 @@ Date de création : 24/07/202 Dernière mise à jour : 05/08/2022    Dev : VPL  
     padding-right:5%;
     padding-left: 20px;
     height: auto;
-    background-color: white
+    background-color: white;
   }
   .section_hebergement h2{
     margin: 15px 0;
-
   }
   .section_hebergement .carte_hebergement{
     width: 100%;
@@ -181,8 +172,7 @@ Date de création : 24/07/202 Dernière mise à jour : 05/08/2022    Dev : VPL  
   }
   .section_hebergement .carte_populaire{
     width: 100%;
-  }
-  
+  }  
   /********populaire*********/
   .section_populaire{
     flex: none;
@@ -211,27 +201,21 @@ Date de création : 24/07/202 Dernière mise à jour : 05/08/2022    Dev : VPL  
   .section_populaire .section_populaire{
     margin-left: 30px;
   }
-  .section_populaire h4{
-    font-size: 120%;
+  .section_populaire .carte_populaire h4{
+    font-size: 120%;  
   }
-  .section_populaire p{
+  .section_populaire .carte_populaire p{
     font-size: 100%;
-    
+    margin-top: 10px;
   }
   .section_populaire .notation{
     font-size: 100%;
-    padding-top: 0;
-    
-   
-   
   }
-
-  .section_populaire .carte_hebergement_texte{
+  .section_populaire .carte_populaire_texte{
     display: flex;
     flex-direction: column;
     margin-left: 10px;
-  }  
-
+  } 
   /*******activite*******/
     .section_activite{
     height: 1730px;
@@ -259,7 +243,7 @@ Date de création : 24/07/202 Dernière mise à jour : 05/08/2022    Dev : VPL  
   }
   .section_activite .activite .carte_activite_grand {
     margin-bottom: 15px;
-    width: 100%;
+    width: 102%;
   } 
   .section_activite .carte_activite_colonne .carte_activite_frioul{
     margin:0;
@@ -272,14 +256,12 @@ Date de création : 24/07/202 Dernière mise à jour : 05/08/2022    Dev : VPL  
   }
   .section_activite .activite .carte_activite_colonne {
     margin-bottom: 0;
-    width: 100%;
+    width: 102%;
   } 
-
   .section_activite .carte_activite_texte{
     font-weight: 700;
     font-size: 100%;
-  
-}
+  }
   /******* pied de page*****/
   .pied_page{
     height: auto;
@@ -287,7 +269,7 @@ Date de création : 24/07/202 Dernière mise à jour : 05/08/2022    Dev : VPL  
   }
 }
 /*** version téléphone portable  ***/
-@media screen and (width < 768px){
+@media screen and (max-width: 767px){
   .bouton_recherche{
     position: relative;
     width: 50px;
@@ -297,7 +279,7 @@ Date de création : 24/07/202 Dernière mise à jour : 05/08/2022    Dev : VPL  
   .saisie_localisation{
     width:100%;
     max-width: 450px;
-}
+  }
   .bouton_recherche span{
     display: none;
   }
@@ -330,31 +312,30 @@ Date de création : 24/07/202 Dernière mise à jour : 05/08/2022    Dev : VPL  
   .section_populaire img{
     width: 160px;
   }
-
   /*  hébergement  */
-
   .section_hebergement{
-
        padding-right:3%;
   }
-  
- 
    /* Acctivité */
   .section_activite{
-    height: 1800px;
-    margin-left: 10px;
-    margin-bottom: O;
+    height: 1800px; 
   }
+  .section_activite .activite .carte_activite_grand,
+  .section_activite .activite .carte_activite_colonne {
+    margin-bottom: 15px;
+    width: 101%;
+  } 
 }
-
 /*** version téléphone portable  petit écran ***/
-@media screen and (max-width: 430px){
-
+@media screen and (max-width: 440px){
   .section_populaire .carte_hebergement_texte{
     margin-left: 0;
     margin-right: 0;
   }
-
+  .section_activite .activite .carte_activite_grand,
+  .section_activite .activite .carte_activite_colonne {
+    width: 99%;
+  } 
 }
   
   

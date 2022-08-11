@@ -1,19 +1,18 @@
 /*** information.css -- partie navigation des règles de mise en forme du site Booki - projet 2 OpenClassroom
-Date de création : 24/07/202   Dernière mise à jour : 05/08/2022       Dev : VPL  ****/
+Date de création : 24/07/202   Dev : VPL  ****/
 
 .section_populaire{
     background: #F2F2F2;
-    width: 29%;
+    width: 30%;
     height: 650px;
-    border-radius: 20px; /* bordure arrondie  */
-   
+    border-radius: 20px; /* bordure arrondie  */   
 }
 .section_populaire .titre_populaire{
-    width: 85%;
     display: flex;
-    justify-content: space-between;/* Les éléments sont répartis équitablement
+    justify-content: space-around;/* Les éléments sont répartis équitablement
     À chaque extrémité, entre le bord du conteneur et le premier/dernier élément on a la moitié de l'espace appliqué entre chaque élément */
-    margin: 40px auto;
+    align-items: center;
+    margin: 40px 0;
 }
 .fa-chart-line{
     font-size: 25px;
@@ -23,37 +22,36 @@ Date de création : 24/07/202   Dernière mise à jour : 05/08/2022       Dev : 
     border-radius: 20px;
     background-color: white;
     height: 145px;
-    width: 95%;  /* 290  px */
+    width: 290px;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    display: flex;    
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.062); /*** bordure effet ombre  ***/
     transition: 0.8s; /** effet visuel **/
+    display: flex;
+    flex-direction: row;
 }
 .section_populaire .carte_populaire:hover{
-    transform: scale(1.03);  /** effet visuel **/
+    transform: scale(1.09);  /** effet visuel **/
 }
 .section_populaire img{
     object-fit: cover; /***  Le contenu remplacé est dimensionné pour maintenir son ratio d'affichage  ***/
     height: 140px;
-    width: 110px; /*  110px */
+    width: 110px;
     border-radius: 20px 0 0 20px; /** bordure arrondi  **/
     padding: 3%;
 }
 .section_populaire .carte_hebergement_texte{
-    display: flex; /** éléments flexibles ***/ 
-    justify-content: space-between; 
-    flex-wrap: wrap;    
+    margin-top: 1%;
 }
-
-.section_populaire .carte_populaire h4{
-    margin-top: 10px;
+.section_populaire .carte_populaire_texte h4,
+.section_populaire .carte_populaire_texte p{
+  font-size: 80%
 }
-.section_populaire .notation{
-    margin: 0;
-    padding: 0;
-    
+.section_populaire .carte_populaire .carte_populaire_texte{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .section_populaire .couleur_bleu{
     color: #0065fc;
@@ -63,5 +61,4 @@ Date de création : 24/07/202   Dernière mise à jour : 05/08/2022       Dev : 
     color: #d6d1d1;
     font-size: 80%;
 }
-
   
