@@ -10,13 +10,15 @@ Date de création : 24/07/202   Dev : VPL  ****/
 .section_activite .activite{
    display: flex;
    height: 470px;
-   gap: 2%;  /*** taille entre les lignes d'un éléments*****/
+   gap: 2%;  /*** l'écart de lignes*****/
    margin-left: 30px;
 }
 .section_activite .carte_activite_colonne{
    display: flex;
    flex-direction: column;
-   justify-content: space-between;
+   justify-content: space-between;/* Les éléments sont répartis équitablement
+   Le bord du premier est aligné sur le   début du conteneur et la fin du dernier
+   est alignée sur la fin du conteneur */
 }
 .section_activite .carte_activite_colonne .carte_activite_petit,
 .section_activite .carte_activite_colonne .carte_activite_frioul,

@@ -17,13 +17,15 @@ Date de création : 24/07/202   Dev : VPL  ****/
     margin: 40px 0 20px 33px;
 }
 .hebergement_haut, .hebergement_bas{
-    display: flex; /** éléments flexibles ***/ 
-    justify-content: space-evenly; 
+    display: flex; 
+    justify-content: space-evenly; /* Les éléments sont répartis équitablement
+    Tous les éléments sont séparés par le même  espace */
     align-items: center;    
 }
 .section_hebergement img{
     object-fit: cover; /* Le contenu remplacé est dimensionné pour maintenir son ratio d'affichage tout en remplissant toute la boîte de contenu */
-    overflow: hidden;
+    overflow: hidden; /* Le contenu est rogné si besoin pour s'inscrire 
+    dans la boîte de remplissage (padding) et aucune barre de défilement n'est affichée  */
     width: 100%;
     height: 120px;
     border-radius: 20px 25px 0 0; /***arrondi du cadre***/ 
@@ -45,7 +47,7 @@ Date de création : 24/07/202   Dev : VPL  ****/
 }
 .carte_hebergement_texte{
     margin-left: 15px;
-    line-height: 25px;
+    line-height: 25px; /*  définit la hauteur de la boîte d'une ligne */
 }
 .section_hebergement .notation{
     font-size: 90%;

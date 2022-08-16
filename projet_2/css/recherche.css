@@ -53,6 +53,6 @@ Date de création : 24/07/202   Dev : VPL  ****/
     cursor: pointer;
 }
 .bouton_recherche i{
-    display: none;
+    display: none; /* l'icone loupe ne s'affiche pour le mode ordinateur    */
 }
   
